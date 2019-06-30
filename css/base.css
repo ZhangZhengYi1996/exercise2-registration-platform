@@ -1,0 +1,105 @@
+/* 具体样式 */
+a{
+    text-decoration: none;
+}
+/*top*/
+.top .wrap .telephone span{
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: gray;
+    display: block;
+    float: left;
+}
+.top .wrap .telephone img{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 7px 2px;
+    float: left;
+}
+.top .wrap .welcome{
+    float: right;
+    line-height: 30px;
+    font-size: 12px;
+    color: gray;
+}
+.top .wrap .welcome span .login{
+color: #60bff2;
+padding-left: 30px;
+}
+.top .wrap .welcome span .register{
+    color: #60bff2;
+    padding-left: 15px;
+}
+.top .wrap .welcome span .help{
+    color: #60bff2;
+    padding-left: 77px;
+}
+/*header*/
+.header .wrap .logo{
+    float: left;
+    height: 90px;
+  position: relative;
+}
+.header .wrap .logo img{
+    width: 358px;
+    height: 60px;
+    position: absolute;
+    top:50%;
+    margin-top:-30px;
+}
+.header .wrap .search{
+    background:#fec009;
+    width:327px;
+    height:37px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top:-18.5px;
+    border-radius: 5px;
+}
+/*nav*/
+.nav .wrap .left a, .nav .wrap .right a{
+    color: white;
+font-size: 17px;
+line-height: 36px;
+}
+.nav .wrap .left a{
+    float: left;
+    padding-left:50px;
+}
+.nav .wrap .right a{
+  float: right;
+}
+/*content*/
+.content .wrap .introduce .introduce-wrap{
+    height: 100%;
+    width: 950px;
+   margin: 0 auto;
+}
+.content .wrap .introduce .introduce-wrap .title{
+height: 50px;
+width: 100%;
+border-bottom: 1px solid rgb(196, 192, 192);
+}
+.content .wrap .introduce .introduce-wrap .title span:first-child{
+    font-size: 18px;
+    line-height: 50px;
+}
+.content .wrap .introduce .introduce-wrap .title span{
+    font-size: 12px;
+    line-height: 50px;
+}
+.content .wrap .introduce .introduce-wrap .main{
+    height: 209px;
+    width: 100%;
+}
+/*footer*/
+.footer span{
+    color: gray;
+    font-size:12px;
+    line-height: 70px;
+    text-align: center;
+    display: block;
+}
