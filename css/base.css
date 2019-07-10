@@ -72,7 +72,10 @@ line-height: 36px;
 .nav .wrap .right a{
   float: right;
 }
-/*content*/
+.nav .wrap a:hover{
+    color: #e1eff7;
+}
+/*content introduce*/
 .content .wrap .introduce .introduce-wrap{
     height: 100%;
     width: 950px;
@@ -91,10 +94,166 @@ border-bottom: 1px solid rgb(196, 192, 192);
     font-size: 12px;
     line-height: 50px;
 }
+.content .wrap .introduce .introduce-wrap .title span:nth-child(2){
+color:#fec009;
+padding-left: 5px;
+}
+
+.content .wrap .introduce .introduce-wrap .title span:nth-child(3),
+.content .wrap .introduce .introduce-wrap .title span:nth-child(5),
+.content .wrap .introduce .introduce-wrap .title span:nth-child(7){
+color:blue;
+padding-left: 10px;
+}
+.content .wrap .introduce .introduce-wrap .title span:nth-child(3){
+    padding-left: 460px;
+    }
 .content .wrap .introduce .introduce-wrap .main{
     height: 209px;
     width: 100%;
+    position: relative;
 }
+.content .wrap .introduce .introduce-wrap .main .hospitalImg{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 10px;
+}
+.content .wrap .introduce .introduce-wrap .main .hospitalImg img{
+    width: 200px;
+    height: 150px;
+}
+.content .wrap .introduce .introduce-wrap .main .map{
+    width: 249px;
+    height: 167px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+.content .wrap .introduce .introduce-wrap .main .map img{
+    width: 249px;
+    height: 167px;
+}
+.content .wrap .introduce .introduce-wrap .main .information{
+    position: absolute;
+    top: 15px;
+    left:220px;
+    width: 402px;
+    height: 173px;
+}
+
+.content .wrap .introduce .introduce-wrap .main .information .location ,
+.content .wrap .introduce .introduce-wrap .main .information .url ,
+.content .wrap .introduce .introduce-wrap .main .information .number ,
+.content .wrap .introduce .introduce-wrap .main .information .route {
+background: url(../img/icon-web.png)  no-repeat;
+display: inline-block;
+padding-left: 30px;
+font-size: 13px;
+    line-height: 16px;
+    width: 402px;
+    margin: 8px 0px;
+}
+.content .wrap .introduce .introduce-wrap .main .information .url{
+    background: url(../img/icon-web.png)  0px -22px no-repeat;
+}
+.content .wrap .introduce .introduce-wrap .main .information .number{
+    background: url(../img/icon-web.png)  0px -44px no-repeat;
+}
+.content .wrap .introduce .introduce-wrap .main .information .route{
+    background: url(../img/icon-web.png)  0px -63px no-repeat;
+    height: 16px;
+}
+/*content system*/
+.content .wrap .system .tab{
+    border-bottom: 1px solid #60bff2;
+}
+.content .wrap .system .tab a{
+width: 110px;
+color: #60bff2;
+display: inline-block;
+line-height: 32px;
+text-align: center;
+}
+.content .wrap .system .tab .active{
+    background: #60bff2;
+    color: white;
+}
+.content .wrap .system .details .header{
+    font-size: 18px;
+    height: 43px;
+    line-height: 43px;
+    padding-left: 25px;
+    width: 681px;
+    background-color: #f4f6fa;
+}
+.content .wrap .system .details .department table{
+/* width: 100%;
+height: 100%; */
+
+line-height: 28px;
+border-collapse: collapse;
+}
+.content .wrap .system .details .department table tr .department-name{
+    font-size: 11px;
+    color: gray;
+    text-align: center;
+    vertical-align: top;
+    background-color: #f2fbff;
+    height: 68px;
+    width: 175px;
+    padding-left: 0px;
+    border: 1px solid #f4f6fa;
+}
+.content .wrap .system .details .department table 
+{
+    border: 1px solid #f4f6fa;
+}
+.content .wrap .system .details .department table .border{
+    border-bottom: 1px solid #f4f6fa;
+}
+.content .wrap .system .details .department table tr td{
+    color: black;
+    font-size: 13px;
+    width: 175px;
+    text-align: left;
+    padding-left: 10px;
+    vertical-align: 28px;
+    
+}
+.content .wrap .system .rule .title{
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    background: #f4f6fa;
+}
+.content .wrap .system .rule .title span:first-child{
+    font-size: 15px;
+}
+.content .wrap .system .rule .title span:nth-child(2){
+    font-size: 11px;
+    color:#60bff2;
+}
+.content .wrap .system .rule .rule-detail{
+    overflow-y: scroll;
+    width: 274px;
+    height:243px;
+}
+.content .wrap .system .rule .rule-detail div{
+    margin-left: 15px;
+    line-height: 30px;
+    font-size: 11px;
+    color: gray;
+    
+}
+
+.content .wrap .system .rule .rule-detail div span{
+    display: inline-block;
+    color: black;
+    font-size: 13px;
+}
+
+
 /*footer*/
 .footer span{
     color: gray;
