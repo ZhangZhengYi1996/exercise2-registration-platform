@@ -204,6 +204,7 @@ border-collapse: collapse;
     width: 175px;
     padding-left: 0px;
     border: 1px solid #f4f6fa;
+    
 }
 .content .wrap .system .details .department table 
 {
@@ -212,14 +213,18 @@ border-collapse: collapse;
 .content .wrap .system .details .department table .border{
     border-bottom: 1px solid #f4f6fa;
 }
-.content .wrap .system .details .department table tr td{
+.content .wrap .system .details .department table tr td a{
+    display: inline-block;
     color: black;
+    
     font-size: 13px;
-    width: 175px;
+}
+.content .wrap .system .details .department table tr td{
+   
+    width:175px;
     text-align: left;
     padding-left: 10px;
     vertical-align: 28px;
-    
 }
 .content .wrap .system .rule .title{
     text-align: center;
