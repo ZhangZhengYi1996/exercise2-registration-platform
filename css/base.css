@@ -60,6 +60,9 @@ padding-left: 30px;
     border-radius: 5px;
 }
 /*nav*/
+.nav{
+    z-index: 5;
+}
 .nav .wrap .left a, .nav .wrap .right a{
     color: white;
 font-size: 17px;

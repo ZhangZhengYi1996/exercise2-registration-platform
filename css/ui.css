@@ -1,0 +1,84 @@
+/* ui-backTop */
+.ui-backTop {
+    position: fixed;
+    right: 2px;
+    bottom: 10px;
+    display: none;
+    z-index: 9;
+    height: 40px;
+    width: 40px;
+    background: rgb(192, 185, 185) url(../img/icon-go-up.png) no-repeat center;
+}
+
+.ui-backTop:hover {
+    background: rgb(192, 185, 185);
+}
+
+.ui-backTop:hover:after {
+    content: "回到顶部";
+    text-align: center;
+    line-height: 20px;
+    display: block;
+    color: white;
+}
+
+/* ui-search */
+.ui-search {
+    position: relative;
+    z-index: 9;
+}
+
+.ui-search-select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 37px;
+    width: 75px;
+    cursor: pointer;
+}
+
+.ui-search-select span {
+    display: block;
+    padding-left: 15px;
+    background: url(../img/23.png) right no-repeat;
+    color: white;
+}
+
+.ui-search-select-item {
+    display: none;
+    
+}
+
+.ui-search-select-item span {
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    background: white;
+    padding-left: 0;
+    color: black;
+    
+}
+.ui-search-select-item span:hover{
+    background: rgb(204, 201, 201);
+}
+
+.ui-search-input {
+
+    position: absolute;
+    left: 77px;
+    top: 3.5px;
+}
+
+.ui-search-input input {
+    height: 30px;
+    width: 215px;
+    border: none;
+}
+.ui-search-submit{
+    background: url(../img/shousuo.png) no-repeat center;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}

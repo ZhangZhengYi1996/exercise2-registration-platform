@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css\layout.css">
     <link rel="stylesheet" href="css\base.css">
+    <link rel="stylesheet" href="css\ui.css">
     <script src="js\jquery.js"></script>
     <script src="js\ui.js"></script>
 </head>
@@ -34,7 +35,22 @@
             <div class="logo">
                 <img src="img\logo.png" alt="">
             </div>
-            <div class="search"></div>
+            <div class="search ui-search">
+                <div class="ui-search-select">
+                    <span>医院</span>
+                    <div class="ui-search-select-item">
+                        <span>医院</span>
+                        <span>科室</span>
+                        <span>疾病</span>
+                    </div>
+                </div>
+                <div class="ui-search-input">
+                    <input type="text" placeholder="请输入搜索内容">
+                </div>
+                <div class="ui-search-submit">
+
+                </div>
+            </div>
         </div>
     </div>
     <div class="nav">
@@ -85,125 +101,144 @@
                 </div>
             </div>
             <div class="system">
-                <div class="tab">
-                    <a href="" class="active">预约挂号</a>
-                    <a href="">医院介绍</a>
-                    <a href="">预约须知</a>
-                    <a href="">停诊信息</a>
-                    <a href="">查询取消</a>
+                <div class="tab ui-tab">
+                    <a href="" class="active ui-tab-item">预约挂号</a>
+                    <a href="" class="ui-tab-item">医院介绍</a>
+                    <a href="" class="ui-tab-item">预约须知</a>
+                    <a href="" class="ui-tab-item">停诊信息</a>
+                    <a href="" class="ui-tab-item">查询取消</a>
                 </div>
-                <div class="details">
-                    <div class="header">开放预约科室</div>
-                    <div class="department">
-                        <table>
-                            <tr>
-                                <td rowspan="3" class="department-name">2301</td>
-                                <td><a href="">特殊门诊科</a></td>
-                                <td><a href="">特殊门诊科</a></td>
-                                <td><a href="">特殊门诊科</a></td>
-                                <td><a href="">特殊门诊科</a></td>
-                            </tr>
-                            <tr>
+                <div class="ui-tab-content">
+                    <div class="ui-tab-content-item">
+                        <div class="details ">
+                            <div class="header">开放预约科室</div>
+                            <div class="department">
+                                <table>
+                                    <tr>
+                                        <td rowspan="3" class="department-name">2301</td>
+                                        <td><a href="">特殊门诊科</a></td>
+                                        <td><a href="">特殊门诊科</a></td>
+                                        <td><a href="">特殊门诊科</a></td>
+                                        <td><a href="">特殊门诊科</a></td>
+                                    </tr>
+                                    <tr>
 
-                                <td><a href="">特殊门诊科</a></td>
-                                <td><a href="">特殊门诊科</a></td>
-                                <td><a href="">特殊门诊科</a></td>
-                                <td><a href="">特殊门诊科</a></td>
-                            </tr>
-                            <tr class="border">
+                                        <td><a href="">特殊门诊科</a></td>
+                                        <td><a href="">特殊门诊科</a></td>
+                                        <td><a href="">特殊门诊科</a></td>
+                                        <td><a href="">特殊门诊科</a></td>
+                                    </tr>
+                                    <tr class="border">
 
-                                <td><a href="">特殊门诊科</a></td>
-                                <td><a href="">特殊门诊科</a></td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="3" class="department-name">专科</td>
-                                <td><a href="">多发性硬化专科</aa></td>
-                                <td><a href="">多发性硬化专科</a></td>
-                                <td><a href="">多发性硬化专科</a></td>
-                                <td><a href="">多发性硬化专科</a></td>
-                            </tr>
-                            <tr>
+                                        <td><a href="">特殊门诊科</a></td>
+                                        <td><a href="">特殊门诊科</a></td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3" class="department-name">专科</td>
+                                        <td><a href="">多发性硬化专科</aa>
+                                        </td>
+                                        <td><a href="">多发性硬化专科</a></td>
+                                        <td><a href="">多发性硬化专科</a></td>
+                                        <td><a href="">多发性硬化专科</a></td>
+                                    </tr>
+                                    <tr>
 
-                                <td><a href="">多发性硬化专科</a></td>
-                                <td><a href="">多发性硬化专科</a></td>
-                                <td><a href="">多发性硬化专科</a></td>
-                                <td><a href="">多发性硬化专科</a></td>
-                            </tr>
-                            <tr class="border">
+                                        <td><a href="">多发性硬化专科</a></td>
+                                        <td><a href="">多发性硬化专科</a></td>
+                                        <td><a href="">多发性硬化专科</a></td>
+                                        <td><a href="">多发性硬化专科</a></td>
+                                    </tr>
+                                    <tr class="border">
 
-                                <td><a href="">多发性硬化专科</a></td>
-                                <td><a href="">多发性硬化专科</a></td>
-                                <td><a href="">多发性硬化专科</a></td>
-                                <td><a href="">多发性硬化专科</a></td>
-                            </tr>
-                            <tr>
-                                <td rowspan="3" class="department-name">内科</td>
-                                <td><a href="">脑瘤内科门诊</a></td>
-                                <td><a href="">脑瘤内科门诊</a></td>
-                                <td><a href="">脑瘤内科门诊</a></td>
-                                <td><a href="">脑瘤内科门诊</a></td>
-                            </tr>
-                            <tr>
+                                        <td><a href="">多发性硬化专科</a></td>
+                                        <td><a href="">多发性硬化专科</a></td>
+                                        <td><a href="">多发性硬化专科</a></td>
+                                        <td><a href="">多发性硬化专科</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3" class="department-name">内科</td>
+                                        <td><a href="">脑瘤内科门诊</a></td>
+                                        <td><a href="">脑瘤内科门诊</a></td>
+                                        <td><a href="">脑瘤内科门诊</a></td>
+                                        <td><a href="">脑瘤内科门诊</a></td>
+                                    </tr>
+                                    <tr>
 
-                                <td><a href="">脑瘤内科门诊</a></td>
-                                <td><a href="">脑瘤内科门诊</a></td>
-                                <td><a href="">脑瘤内科门诊</a></td>
-                                <td><a href="">脑瘤内科门诊</a></td>
-                            </tr>
-                            <tr class="border">
+                                        <td><a href="">脑瘤内科门诊</a></td>
+                                        <td><a href="">脑瘤内科门诊</a></td>
+                                        <td><a href="">脑瘤内科门诊</a></td>
+                                        <td><a href="">脑瘤内科门诊</a></td>
+                                    </tr>
+                                    <tr class="border">
 
-                                <td><a href="">脑瘤内科门诊</a></td>
-                                <td><a href="">脑瘤内科门诊</a></td>
-                                <td><a href="">脑瘤内科门诊</a></td>
-                                <td><a href="">脑瘤内科门诊</a></td>
-                            </tr>
-                            <tr>
-                                <td rowspan="3" class="department-name">内科</td>
-                                <td><a href="">血液内科</a></td>
-                                <td><a href="">血液内科</a></td>
-                                <td><a href="">血液内科</a></td>
-                                <td><a href="">血液内科</a></td>
-                            </tr>
-                            <tr>
+                                        <td><a href="">脑瘤内科门诊</a></td>
+                                        <td><a href="">脑瘤内科门诊</a></td>
+                                        <td><a href="">脑瘤内科门诊</a></td>
+                                        <td><a href="">脑瘤内科门诊</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3" class="department-name">内科</td>
+                                        <td><a href="">血液内科</a></td>
+                                        <td><a href="">血液内科</a></td>
+                                        <td><a href="">血液内科</a></td>
+                                        <td><a href="">血液内科</a></td>
+                                    </tr>
+                                    <tr>
 
-                                <td><a href="">血液内科</a></td>
-                                <td><a href="">血液内科</a></td>
-                                <td><a href="">血液内科</a></td>
-                                <td><a href="">血液内科</a></td>
-                            </tr>
-                            <tr>
+                                        <td><a href="">血液内科</a></td>
+                                        <td><a href="">血液内科</a></td>
+                                        <td><a href="">血液内科</a></td>
+                                        <td><a href="">血液内科</a></td>
+                                    </tr>
+                                    <tr>
 
-                                <td><a href="">血液内科</a></td>
-                                <td><a href="">血液内科</a></td>
-                                <td><a href="">血液内科</a></td>
-                                <td><a href="">血液内科</a></td>
-                            </tr>
-                        </table>
+                                        <td><a href="">血液内科</a></td>
+                                        <td><a href="">血液内科</a></td>
+                                        <td><a href="">血液内科</a></td>
+                                        <td><a href="">血液内科</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="rule">
+                            <div class="title">
+                                <span>预约规则</span><span>(每日8：30更新)</span>
+                            </div>
+                            <div class="rule-detail">
+                                <div class="period">
+                                    <span>预约周期：</span>7天
+                                </div>
+                                <div class="open">
+                                    <span>放号时间：</span>8：30
+                                </div>
+                                <div class="close">
+                                    <span>停挂时间：</span>下午14：00停止次日预约挂号（周五14：00后停挂至下周一）
+                                </div>
+                                <div class="cancle">
+                                    <span>退号时间：</span>就诊前14：00前取消
+                                </div>
+                                <div class="special">
+                                    <span>特殊规则：</span>此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="rule">
-                    <div class="title">
-                        <span>预约规则</span><span>(每日8：30更新)</span>
+                    <div class="ui-tab-content-item" style="display: none">
+                        医院介绍
                     </div>
-                    <div class="rule-detail">
-                        <div class="period">
-                            <span>预约周期：</span>7天
-                        </div>
-                        <div class="open">
-                            <span>放号时间：</span>8：30
-                        </div>
-                        <div class="close">
-                            <span>停挂时间：</span>下午14：00停止次日预约挂号（周五14：00后停挂至下周一）
-                        </div>
-                        <div class="cancle">
-                            <span>退号时间：</span>就诊前14：00前取消
-                        </div>
-                        <div class="special">
-                            <span>特殊规则：</span>此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则此处为挂号特殊规则
-                        </div>
+                    <div class="ui-tab-content-item" style="display: none">
+                        预约须知
                     </div>
+                    <div class="ui-tab-content-item" style="display: none">
+                        停诊信息
+                    </div>
+                    <div class="ui-tab-content-item" style="display: none">
+                        查询取消
+                    </div>
+
+
                 </div>
             </div>
         </div>
